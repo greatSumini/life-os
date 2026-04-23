@@ -32,7 +32,7 @@ export default async function Home() {
     <main className="min-h-screen bg-[#F2F2F7]">
       <div className="mx-auto max-w-lg px-4 pt-12 pb-8">
         <h1 className="px-1 text-[34px] font-bold leading-tight tracking-tight text-black">
-          홈
+          Home
         </h1>
 
         <div className="mt-6">
