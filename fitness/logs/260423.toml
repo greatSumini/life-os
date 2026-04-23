@@ -1,51 +1,43 @@
 date = "2026-04-23"
 session_type = "self"
-notes = "추천 루틴 기반 자율 수행 — 어깨(메인) + 등 두께(보조) + 유산소"
+duration_min = 44
+notes = "추천 루틴 기반 자율 수행 — 어깨(메인) + 등 두께(보조). 시간 부족으로 사이드 플랭크·러닝 생략. 리버스 플라이/페이스풀은 다른 기구 점유 이슈로 슈퍼세트 대신 따로 수행."
 
 [[workouts]]
 exercise = "overhead_press"
 sets = 4
-weight_kg = 15
-reps_per_set = 10
-notes = "보수적 시작, 폼 우선 / 어제 체스트 프레스로 전면삼각근 피로 고려"
+weight_kg = 22.5
+reps_per_set = 20
+notes = "20kg / 20kg / 25kg / 25kg × 20회"
 
 [[workouts]]
 exercise = "lateral_raise"
 sets = 3
-weight_kg = 5
-reps_per_set = 15
-notes = "팔꿈치 손목보다 살짝 위, 반동 없이"
-
-[[workouts]]
-exercise = "reverse_fly"
-sets = 3
-weight_kg = 7.5
-reps_per_set = 15
-notes = "페이스풀과 슈퍼세트 / 후면삼각근(목표 근육) 집중"
+weight_kg = 4.5
+reps_per_set = 20
+notes = "6kg / 4kg / 4kg × 20회 / 첫 세트 6kg 버거워 4kg로 낮춤"
 
 [[workouts]]
 exercise = "face_pull"
 sets = 3
 weight_kg = 15
-reps_per_set = 15
-notes = "리버스 플라이와 슈퍼세트"
+reps_per_set = 20
+notes = "10kg / 15kg / 20kg × 20회 / 리버스 플라이와 따로 수행 (기구 점유 이슈)"
+
+[[workouts]]
+exercise = "reverse_fly"
+sets = 2
+weight_kg = 15
+reps_per_set = 20
+notes = "15kg × 2세트 20회 / 페이스풀과 따로 수행"
 
 [[workouts]]
 exercise = "seated_row"
 sets = 3
-weight_kg = 30
-reps_per_set = 15
-notes = "등 두께 보완 / 승모·능형근 수축 확실하게"
-
-[[workouts]]
-exercise = "side_plank_band"
-sets = 2
+weight_kg = 23.5
 reps_per_set = 20
-duration_sec = 10
-notes = "각 사이드 / 좌 25회 : 우 15회 (좌측 보강)"
+notes = "20kg / 25kg / 25kg × 20회"
 
-[[workouts]]
-exercise = "running"
-sets = 1
-duration_sec = 1080
-notes = "zone 2, 대화 가능한 페이스 / 15~20분 / 트레이너 04-22 피드백 반영"
+# 생략된 운동 (시간 부족)
+# - side_plank_band
+# - running
