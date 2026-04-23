@@ -1,0 +1,47 @@
+date = "2026-04-22"
+session_type = "PT"
+
+[[workouts]]
+exercise = "side_plank_band"
+sets = 1
+reps_per_set = 20
+duration_sec = 10
+notes = "각 사이드 / 좌측 약함 → 좌측 횟수 더 많이"
+
+[[workouts]]
+exercise = "chest_fly"
+sets = 2
+weight_kg = 15
+reps_per_set = 20
+notes = "본 가슴운동 전 근육 찢어주는 워밍업"
+
+[[workouts]]
+exercise = "chest_press"
+sets = 3
+weight_kg = 20
+reps_per_set = 20
+notes = "내릴 때 어깨가 찝히지 않도록 / 어깨를 낮춘 채 뒤로 회전하는 느낌 유지"
+
+[[workouts]]
+exercise = "push_up"
+sets = 3
+reps_per_set = 15
+
+[[workouts]]
+exercise = "lat_pulldown"
+sets = 3
+weight_kg = 17
+reps_per_set = 20
+notes = "15kg / 15kg / 20kg × 20회"
+
+[[workouts]]
+exercise = "barbell_curl"
+sets = 3
+reps_per_set = 20
+notes = "이지바 / 라잉 트라이셉스 익스텐션과 슈퍼세트"
+
+[[workouts]]
+exercise = "lying_tricep_extension"
+sets = 3
+reps_per_set = 20
+notes = "이지바 / 바벨컬과 슈퍼세트"

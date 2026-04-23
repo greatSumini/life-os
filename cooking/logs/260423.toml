@@ -1,0 +1,7 @@
+[lunch]
+type = "cooked"
+menu = "바르닭 닭가슴살 스테이크 + 계란후라이 + 백미밥"
+ingredients = ["바르닭 닭가슴살 스테이크", "계란 2알", "백미밥 1공기"]
+effort = 1
+satisfaction = 0
+romantic = 1

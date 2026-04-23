@@ -1,0 +1,11 @@
+[lunch]
+type = "ate_out"
+menu = "버거킹 콰트로치즈와퍼세트 + 불고기와퍼 단품"
+
+[dinner]
+type = "cooked"
+menu = "돼지 목살 카레 (남은 절반) + 밥"
+ingredients = ["260421 카레 남은 절반", "밥 1.5공기"]
+effort = 1
+satisfaction = 0
+romantic = 2

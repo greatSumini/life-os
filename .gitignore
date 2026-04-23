@@ -1,0 +1,5 @@
+.omc/
+.env.local
+node_modules/
+
+config.json

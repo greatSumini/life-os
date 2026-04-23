@@ -1,0 +1,8 @@
+[dinner]
+type = "cooked"
+menu = "돼지 목살 카레 + 밥"
+ingredients = ["돼지목살 300g", "감자 2알", "당근 1개", "골든카레 2조각", "냉동양파", "냉동마늘", "버터 1큰술", "밥 1.5공기"]
+note = "절반만 먹고 절반은 남김"
+effort = 4
+satisfaction = 0
+romantic = 2

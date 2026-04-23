@@ -1,0 +1,40 @@
+date = "2026-04-16"
+session_type = "PT"
+
+[[workouts]]
+exercise = "side_plank_band"
+sets = 1
+reps_per_set = 20
+duration_sec = 10
+notes = "각 사이드 / 좌측이 약함"
+
+[[workouts]]
+exercise = "cable_woodchop"
+sets = 1
+weight_kg = 10
+reps_per_set = 14
+notes = "버티기 / 좌:우 = 2:1 비율 (좌측 보강)"
+
+[[workouts]]
+exercise = "plank_bosu"
+sets = 3
+duration_sec = 60
+
+[[workouts]]
+exercise = "lat_pulldown"
+sets = 4
+weight_kg = 20
+reps_per_set = 16
+notes = "12~20회 / 내로우 언더그립"
+
+[[workouts]]
+exercise = "barbell_curl"
+sets = 4
+reps_per_set = 20
+notes = "이지바"
+
+[[workouts]]
+exercise = "lying_tricep_extension"
+sets = 4
+reps_per_set = 15
+notes = "이지바"

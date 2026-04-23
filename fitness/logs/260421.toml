@@ -1,0 +1,64 @@
+date = "2026-04-21"
+session_type = "PT"
+
+[[workouts]]
+exercise = "hip_bridge"
+sets = 3
+reps_per_set = 30
+notes = "밴드 30회 × 3세트"
+
+[[workouts]]
+exercise = "hip_bridge"
+sets = 1
+reps_per_set = 30
+notes = "바벨"
+
+[[workouts]]
+exercise = "hip_adduction"
+sets = 2
+weight_kg = 15
+reps_per_set = 20
+notes = "이너 타이 / 추가 1세트 버티기"
+
+[[workouts]]
+exercise = "hip_abduction"
+sets = 2
+weight_kg = 32
+reps_per_set = 30
+notes = "아웃 타이"
+
+[[workouts]]
+exercise = "single_leg_extension"
+sets = 1
+weight_kg = 5
+reps_per_set = 20
+notes = "좌측부터 → 우측 동일 볼륨"
+
+[[workouts]]
+exercise = "single_leg_extension"
+sets = 1
+weight_kg = 10
+reps_per_set = 20
+notes = "좌측부터 → 우측 동일 볼륨 / 우측 슬개골 외측 과한 움직임 (덜그럭 느낌)"
+
+[[workouts]]
+exercise = "single_leg_extension"
+sets = 1
+weight_kg = 15
+reps_per_set = 20
+notes = "좌측부터 → 우측 동일 볼륨"
+
+[[workouts]]
+exercise = "leg_curl"
+sets = 0
+notes = "수행 (세부 미기록)"
+
+[[workouts]]
+exercise = "deadlift"
+sets = 0
+notes = "수행 (세부 미기록)"
+
+[[workouts]]
+exercise = "lat_pulldown"
+sets = 0
+notes = "수행 (세부 미기록)"

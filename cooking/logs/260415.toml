@@ -1,0 +1,13 @@
+[breakfast]
+type = "skipped"
+
+[lunch]
+type = "ate_out"
+
+[dinner]
+type = "cooked"
+menu = "갈릭버터치킨구이"
+ingredients = ["닭안심", "후추", "가염버터", "진간장", "알룰로스", "양배추", "냉동양파", "냉동마늘"]
+effort = 3
+satisfaction = 2
+romantic = 1

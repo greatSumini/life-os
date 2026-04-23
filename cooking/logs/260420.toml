@@ -1,0 +1,7 @@
+[dinner]
+type = "cooked"
+menu = "원팬 해물 아라비아타 파스타"
+ingredients = ["파스타면", "아라비아타 소스", "냉동 모듬 해물", "냉동 마늘", "올리브유", "소금", "후추"]
+effort = 2
+satisfaction = 0
+romantic = 1

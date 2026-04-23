@@ -1,0 +1,51 @@
+date = "2026-04-23"
+session_type = "self"
+notes = "추천 루틴 기반 자율 수행 — 어깨(메인) + 등 두께(보조) + 유산소"
+
+[[workouts]]
+exercise = "overhead_press"
+sets = 4
+weight_kg = 15
+reps_per_set = 10
+notes = "보수적 시작, 폼 우선 / 어제 체스트 프레스로 전면삼각근 피로 고려"
+
+[[workouts]]
+exercise = "lateral_raise"
+sets = 3
+weight_kg = 5
+reps_per_set = 15
+notes = "팔꿈치 손목보다 살짝 위, 반동 없이"
+
+[[workouts]]
+exercise = "reverse_fly"
+sets = 3
+weight_kg = 7.5
+reps_per_set = 15
+notes = "페이스풀과 슈퍼세트 / 후면삼각근(목표 근육) 집중"
+
+[[workouts]]
+exercise = "face_pull"
+sets = 3
+weight_kg = 15
+reps_per_set = 15
+notes = "리버스 플라이와 슈퍼세트"
+
+[[workouts]]
+exercise = "seated_row"
+sets = 3
+weight_kg = 30
+reps_per_set = 15
+notes = "등 두께 보완 / 승모·능형근 수축 확실하게"
+
+[[workouts]]
+exercise = "side_plank_band"
+sets = 2
+reps_per_set = 20
+duration_sec = 10
+notes = "각 사이드 / 좌 25회 : 우 15회 (좌측 보강)"
+
+[[workouts]]
+exercise = "running"
+sets = 1
+duration_sec = 1080
+notes = "zone 2, 대화 가능한 페이스 / 15~20분 / 트레이너 04-22 피드백 반영"

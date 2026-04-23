@@ -1,0 +1,3 @@
+- [피트니스 목표](user_fitness_goal.md) — 넓은 등판 목표, PT 트레이닝 중, 인바디 추적
+- [데이터 정규화 선호](feedback_data_normalization.md) — 중복 정의 지양, 참조 파일 분리 선호
+- [스킬 네이밍 컨벤션](feedback_skill_naming.md) — 같은 도메인 스킬은 공통 프리픽스로 그룹화

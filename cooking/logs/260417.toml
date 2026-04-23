@@ -1,0 +1,7 @@
+[lunch]
+type = "cooked"
+menu = "오야꼬동"
+ingredients = ["닭안심", "계란", "냉동양파", "진간장", "맛술", "알룰로스", "치킨스톡", "즉석밥", "쪽파"]
+effort = 3
+satisfaction = 0
+romantic = 2

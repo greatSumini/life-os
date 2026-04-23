@@ -1,0 +1,173 @@
+# 운동 사전
+# 새로운 운동이 기록될 때 여기에 추가된다.
+# target: 해당 운동이 자극하는 근육 (profile.toml의 muscle_groups 용어 사용)
+# category: 주요 근육 그룹 (back, chest, shoulder, arms, legs, core)
+
+# === back ===
+
+[lat_pulldown]
+name = "랫풀다운"
+target = ["광배근", "이두근"]
+category = "back"
+
+[seated_row]
+name = "시티드 로우"
+target = ["광배근", "승모근"]
+category = "back"
+
+[deadlift]
+name = "데드리프트"
+target = ["척추기립근", "햄스트링", "둔근", "승모근"]
+category = "back"
+
+[pull_up]
+name = "풀업"
+target = ["광배근", "이두근", "대원근"]
+category = "back"
+
+[face_pull]
+name = "페이스풀"
+target = ["후면삼각근", "승모근"]
+category = "back"
+
+# === chest ===
+
+[bench_press]
+name = "벤치프레스"
+target = ["대흉근", "전면삼각근", "삼두근"]
+category = "chest"
+
+[incline_bench_press]
+name = "인클라인 벤치프레스"
+target = ["대흉근", "전면삼각근"]
+category = "chest"
+
+[cable_crossover]
+name = "케이블 크로스오버"
+target = ["대흉근"]
+category = "chest"
+
+[chest_fly]
+name = "체스트 플라이"
+target = ["대흉근"]
+category = "chest"
+
+[chest_press]
+name = "체스트 프레스"
+target = ["대흉근", "전면삼각근", "삼두근"]
+category = "chest"
+
+[push_up]
+name = "푸쉬업"
+target = ["대흉근", "전면삼각근", "삼두근"]
+category = "chest"
+
+# === shoulder ===
+
+[overhead_press]
+name = "오버헤드 프레스"
+target = ["전면삼각근", "측면삼각근", "삼두근"]
+category = "shoulder"
+
+[lateral_raise]
+name = "레터럴 레이즈"
+target = ["측면삼각근"]
+category = "shoulder"
+
+[reverse_fly]
+name = "리버스 플라이"
+target = ["후면삼각근"]
+category = "shoulder"
+
+# === arms ===
+
+[barbell_curl]
+name = "바벨 컬"
+target = ["이두근"]
+category = "arms"
+
+[tricep_pushdown]
+name = "트라이셉 푸시다운"
+target = ["삼두근"]
+category = "arms"
+
+[lying_tricep_extension]
+name = "라잉 트라이셉스 익스텐션"
+target = ["삼두근"]
+category = "arms"
+
+# === legs ===
+
+[squat]
+name = "스쿼트"
+target = ["대퇴사두근", "둔근"]
+category = "legs"
+
+[leg_press]
+name = "레그프레스"
+target = ["대퇴사두근", "둔근"]
+category = "legs"
+
+[leg_curl]
+name = "레그컬"
+target = ["햄스트링"]
+category = "legs"
+
+[leg_extension]
+name = "레그 익스텐션"
+target = ["대퇴사두근"]
+category = "legs"
+
+[single_leg_extension]
+name = "싱글 레그 익스텐션"
+target = ["대퇴사두근"]
+category = "legs"
+
+[hip_bridge]
+name = "힙 브릿지"
+target = ["둔근", "햄스트링"]
+category = "legs"
+
+[hip_adduction]
+name = "이너 타이 (어덕션)"
+target = ["둔근"]
+category = "legs"
+
+[hip_abduction]
+name = "아웃 타이 (어브덕션)"
+target = ["둔근"]
+category = "legs"
+
+# === core ===
+
+[plank]
+name = "플랭크"
+target = ["복직근", "복횡근"]
+category = "core"
+
+[crunch]
+name = "크런치"
+target = ["복직근"]
+category = "core"
+
+[side_plank_band]
+name = "사이드 플랭크 + 밴드"
+target = ["외복사근", "내복사근", "복횡근"]
+category = "core"
+
+[cable_woodchop]
+name = "케이블 우드찹"
+target = ["외복사근", "내복사근"]
+category = "core"
+
+[plank_bosu]
+name = "플랭크 (보수볼)"
+target = ["복직근", "복횡근"]
+category = "core"
+
+# === cardio ===
+
+[running]
+name = "러닝"
+target = ["심폐지구력"]
+category = "cardio"
