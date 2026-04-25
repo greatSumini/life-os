@@ -42,6 +42,34 @@ export function formatDate(iso: string): string {
   return `${m}월 ${day}일 (${dow})`;
 }
 
+export function weekStart(iso: string): string {
+  const d = new Date(iso);
+  const day = d.getUTCDay();
+  const diff = (day + 6) % 7;
+  d.setUTCDate(d.getUTCDate() - diff);
+  return d.toISOString().slice(0, 10);
+}
+
+export function formatWeekLabel(weekStartIso: string): string {
+  const monday = new Date(weekStartIso);
+  const thursday = new Date(monday);
+  thursday.setUTCDate(thursday.getUTCDate() + 3);
+  const month = thursday.getUTCMonth() + 1;
+  const weekOfMonth = Math.ceil(thursday.getUTCDate() / 7);
+  return `${month}월 ${weekOfMonth}째주`;
+}
+
+export function formatWeekRange(weekStartIso: string): string {
+  const monday = new Date(weekStartIso);
+  const sunday = new Date(monday);
+  sunday.setUTCDate(sunday.getUTCDate() + 6);
+  const m1 = monday.getUTCMonth() + 1;
+  const d1 = monday.getUTCDate();
+  const m2 = sunday.getUTCMonth() + 1;
+  const d2 = sunday.getUTCDate();
+  return `${m1}/${d1} ~ ${m2}/${d2}`;
+}
+
 export function workoutLine(
   w: WorkoutSet,
   exercises: Record<string, Exercise>,

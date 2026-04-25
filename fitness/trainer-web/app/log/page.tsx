@@ -1,11 +1,14 @@
 import WeekStrip from "@/components/WeekStrip";
-import { loadExercises, loadLogs, loadReports } from "@/lib/data";
+import { loadExercises, loadLogs, loadReports, type WorkoutLog } from "@/lib/data";
 import {
   CATEGORY_LABEL,
   CATEGORY_ORDER,
   SectionTitle,
   categoryCounts,
   formatDate,
+  formatWeekLabel,
+  formatWeekRange,
+  weekStart,
   workoutLine,
 } from "@/lib/format";
 
@@ -37,49 +40,66 @@ export default async function LogPage() {
               기록이 없습니다.
             </div>
           ) : (
-            <div className="space-y-3">
-              {logs.map((log) => {
-                const counts = categoryCounts(log, exercises);
-                const totalSets = Object.values(counts).reduce(
-                  (a, b) => a + b,
-                  0,
-                );
-                return (
-                  <article key={log.date} className="rounded-2xl bg-white p-4">
-                    <div className="flex items-baseline justify-between">
-                      <p className="text-[15px] font-semibold text-black">
-                        {formatDate(log.date)}
-                      </p>
-                      <p className="text-[12px] text-[#3C3C43]/50">
-                        {log.session_type ? `${log.session_type} · ` : ""}
-                        {totalSets}세트
-                      </p>
-                    </div>
-                    <div className="mt-2 flex flex-wrap gap-1">
-                      {CATEGORY_ORDER.filter((c) => counts[c]).map((c) => (
-                        <span
-                          key={c}
-                          className="rounded-md bg-[#3C3C43]/8 px-1.5 py-0.5 text-[11px] text-[#3C3C43]/70"
+            <div className="space-y-6">
+              {groupLogsByWeek(logs).map(([week, weekLogs]) => (
+                <div key={week}>
+                  <div className="mb-2 flex items-baseline justify-between px-1">
+                    <h3 className="text-[14px] font-semibold text-[#1C1C1E]">
+                      {formatWeekLabel(week)}
+                    </h3>
+                    <span className="text-[11px] text-[#3C3C43]/50">
+                      {formatWeekRange(week)}
+                    </span>
+                  </div>
+                  <div className="space-y-3">
+                    {weekLogs.map((log) => {
+                      const counts = categoryCounts(log, exercises);
+                      const totalSets = Object.values(counts).reduce(
+                        (a, b) => a + b,
+                        0,
+                      );
+                      return (
+                        <article
+                          key={log.date}
+                          className="rounded-2xl bg-white p-4"
                         >
-                          {CATEGORY_LABEL[c]} {counts[c]}
-                        </span>
-                      ))}
-                    </div>
-                    <ul className="mt-3 space-y-1.5 text-[14px] text-[#1C1C1E]">
-                      {log.workouts.map((w, i) => (
-                        <li key={i} className="leading-snug">
-                          <span>{workoutLine(w, exercises)}</span>
-                          {w.notes && (
-                            <span className="ml-1 text-[12px] text-[#3C3C43]/50">
-                              ({w.notes})
-                            </span>
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  </article>
-                );
-              })}
+                          <div className="flex items-baseline justify-between">
+                            <p className="text-[15px] font-semibold text-black">
+                              {formatDate(log.date)}
+                            </p>
+                            <p className="text-[12px] text-[#3C3C43]/50">
+                              {log.session_type ? `${log.session_type} · ` : ""}
+                              {totalSets}세트
+                            </p>
+                          </div>
+                          <div className="mt-2 flex flex-wrap gap-1">
+                            {CATEGORY_ORDER.filter((c) => counts[c]).map((c) => (
+                              <span
+                                key={c}
+                                className="rounded-md bg-[#3C3C43]/8 px-1.5 py-0.5 text-[11px] text-[#3C3C43]/70"
+                              >
+                                {CATEGORY_LABEL[c]} {counts[c]}
+                              </span>
+                            ))}
+                          </div>
+                          <ul className="mt-3 space-y-1.5 text-[14px] text-[#1C1C1E]">
+                            {log.workouts.map((w, i) => (
+                              <li key={i} className="leading-snug">
+                                <span>{workoutLine(w, exercises)}</span>
+                                {w.notes && (
+                                  <span className="ml-1 text-[12px] text-[#3C3C43]/50">
+                                    ({w.notes})
+                                  </span>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        </article>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
             </div>
           )}
         </section>
@@ -110,4 +130,17 @@ export default async function LogPage() {
       </div>
     </main>
   );
+}
+
+function groupLogsByWeek(
+  logs: WorkoutLog[],
+): Array<[string, WorkoutLog[]]> {
+  const groups = new Map<string, WorkoutLog[]>();
+  for (const log of logs) {
+    const key = weekStart(log.date);
+    const bucket = groups.get(key) ?? [];
+    bucket.push(log);
+    groups.set(key, bucket);
+  }
+  return [...groups.entries()].sort(([a], [b]) => (a < b ? 1 : -1));
 }
