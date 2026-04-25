@@ -1,0 +1,18 @@
+# 브랜드 가공식품 영양성분 DB
+# logs에서 products = ["키"] 로 참조
+
+[맛있닭_닭가슴살스테이크_오리지널]
+brand = "맛있닭"
+name = "닭가슴살 스테이크 오리지널"
+serving_g = 100
+kcal = 165
+protein_g = 20
+fat_g = 6
+saturated_fat_g = 1
+trans_fat_g = 0
+carb_g = 8
+sugar_g = 6
+sodium_mg = 390
+cholesterol_mg = 55
+ingredients = "닭고기(가슴살/국내산) 71.21%, 양파(국내산), 두류가공품(인도산), 소스1, 복합조미식품1, 복합조미식품2, 대파, 옥수수전분, 마늘, 소스2, 복합조미식품3, 참기름, 향미유"
+allergens = ["우유", "대두", "밀", "토마토", "닭고기", "쇠고기"]

@@ -1,0 +1,16 @@
+[lunch]
+type = "cooked"
+menu = "맛있닭 닭가슴살 스테이크 오리지널 + 백미밥"
+products = ["맛있닭_닭가슴살스테이크_오리지널"]
+ingredients = ["백미밥 1공기"]
+effort = 1
+satisfaction = 0
+romantic = 1
+
+[dinner]
+type = "cooked"
+menu = "목살 소금구이 + 깻잎쌈 + 반숙 계란후라이"
+ingredients = ["돼지목살 150g", "계란 2개", "깻잎 8~10장 (약 15g)", "마늘 3쪽", "김치 50g", "소금 1/2작은술", "후추 약간", "식용유 1큰술", "밥 1공기"]
+effort = 3
+satisfaction = 0
+romantic = 2

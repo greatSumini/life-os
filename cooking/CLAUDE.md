@@ -1,5 +1,10 @@
 # cooking
 
+## products.toml
+
+브랜드 가공식품의 영양성분을 키 기반으로 저장. logs에서 `products = ["키"]` 로 참조.
+새 상품을 처음 기록할 때 영양정보가 주어지면 products.toml에 항목을 추가하고, logs에서는 키만 참조한다.
+
 ## logs 채점 기준
 
 ### effort (투입 노력) — 1~5
