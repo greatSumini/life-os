@@ -31,6 +31,7 @@ export type WorkoutSet = {
   reps_per_set?: number;
   weight_kg?: number;
   duration_sec?: number;
+  unstable?: boolean;
   notes?: string;
 };
 
@@ -38,6 +39,7 @@ export type WorkoutLog = {
   date: string;
   session_type?: string;
   workouts: WorkoutSet[];
+  skipped: WorkoutSet[];
 };
 
 export type Report = {
@@ -97,6 +99,7 @@ export async function loadLogs(): Promise<WorkoutLog[]> {
         date: parsed.date ?? yymmddToDate(stem),
         session_type: parsed.session_type,
         workouts: (parsed.workouts as WorkoutSet[] | undefined) ?? [],
+        skipped: (parsed.skipped as WorkoutSet[] | undefined) ?? [],
       };
     })
   );

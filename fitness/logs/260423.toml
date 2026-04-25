@@ -22,6 +22,7 @@ exercise = "face_pull"
 sets = 3
 weight_kg = 15
 reps_per_set = 20
+unstable = true
 notes = "10kg / 15kg / 20kg × 20회 / 리버스 플라이와 따로 수행 (기구 점유 이슈)"
 
 [[workouts]]
@@ -29,6 +30,7 @@ exercise = "reverse_fly"
 sets = 2
 weight_kg = 15
 reps_per_set = 20
+unstable = true
 notes = "15kg × 2세트 20회 / 페이스풀과 따로 수행"
 
 [[workouts]]
@@ -36,8 +38,13 @@ exercise = "seated_row"
 sets = 3
 weight_kg = 23.5
 reps_per_set = 20
+unstable = true
 notes = "20kg / 25kg / 25kg × 20회"
 
-# 생략된 운동 (시간 부족)
-# - side_plank_band
-# - running
+[[skipped]]
+exercise = "side_plank_band"
+notes = "시간 부족"
+
+[[skipped]]
+exercise = "running"
+notes = "시간 부족"

@@ -1,7 +1,7 @@
 date = "2026-04-25"
 session_type = "self"
 duration_min = 52
-notes = "추천 루틴 그대로 수행 — 가슴(메인) + 코어(취약점 보강) + 러닝(취약점 보강)."
+notes = "가슴(메인) + 코어(취약점 보강). 러닝과 케이블 우드찹은 계획했으나 미실시."
 
 [[workouts]]
 exercise = "chest_fly"
@@ -22,6 +22,7 @@ exercise = "incline_bench_press"
 sets = 3
 weight_kg = 15
 reps_per_set = 12
+unstable = true
 notes = "신규 / 가벼운 무게로 시작"
 
 [[workouts]]
@@ -32,19 +33,19 @@ duration_sec = 10
 notes = "각 사이드 / 좌측 약함 → 좌측부터, 좌측 횟수 더 많이"
 
 [[workouts]]
-exercise = "cable_woodchop"
-sets = 2
-weight_kg = 10
-reps_per_set = 14
-notes = "좌:우 = 2:1 비율 (좌측 보강)"
-
-[[workouts]]
 exercise = "plank_bosu"
 sets = 3
 duration_sec = 60
 
-[[workouts]]
+[[skipped]]
+exercise = "cable_woodchop"
+sets = 2
+weight_kg = 10
+reps_per_set = 14
+notes = "좌:우 = 2:1 비율 (좌측 보강) / 계획했으나 미실시"
+
+[[skipped]]
 exercise = "running"
 sets = 1
 duration_sec = 900
-notes = "15분 / 가벼운 페이스 / 근지구력 보강 (4-22 트레이너 권장)"
+notes = "15분 / 가벼운 페이스 / 근지구력 보강 (4-22 트레이너 권장) / 계획했으나 미실시"

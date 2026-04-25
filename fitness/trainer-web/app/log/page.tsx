@@ -1,3 +1,4 @@
+import ColorLegend from "@/components/ColorLegend";
 import WeekStrip from "@/components/WeekStrip";
 import { loadExercises, loadLogs, loadReports, type WorkoutLog } from "@/lib/data";
 import {
@@ -34,7 +35,12 @@ export default async function LogPage() {
         </div>
 
         <section className="mt-8">
-          <SectionTitle>운동 세션</SectionTitle>
+          <div className="flex items-center justify-between">
+            <SectionTitle>운동 세션</SectionTitle>
+            <div className="px-1 pb-2">
+              <ColorLegend />
+            </div>
+          </div>
           {logs.length === 0 ? (
             <div className="rounded-2xl bg-white p-6 text-center text-[14px] text-[#3C3C43]/50">
               기록이 없습니다.
@@ -84,10 +90,33 @@ export default async function LogPage() {
                           </div>
                           <ul className="mt-3 space-y-1.5 text-[14px] text-[#1C1C1E]">
                             {log.workouts.map((w, i) => (
-                              <li key={i} className="leading-snug">
+                              <li
+                                key={i}
+                                className={`leading-snug ${w.unstable ? "text-[#FF9500]" : ""}`}
+                              >
                                 <span>{workoutLine(w, exercises)}</span>
                                 {w.notes && (
-                                  <span className="ml-1 text-[12px] text-[#3C3C43]/50">
+                                  <span
+                                    className={`ml-1 text-[12px] ${w.unstable ? "text-[#FF9500]/70" : "text-[#3C3C43]/50"}`}
+                                  >
+                                    ({w.notes})
+                                  </span>
+                                )}
+                              </li>
+                            ))}
+                            {log.skipped.map((w, i) => (
+                              <li
+                                key={`skipped-${i}`}
+                                className="leading-snug text-[#FF3B30]"
+                              >
+                                <span className="line-through">
+                                  {workoutLine(w, exercises)}
+                                </span>
+                                <span className="ml-1.5 text-[11px] font-medium uppercase tracking-wide">
+                                  미실시
+                                </span>
+                                {w.notes && (
+                                  <span className="ml-1 text-[12px] text-[#FF3B30]/70">
                                     ({w.notes})
                                   </span>
                                 )}
