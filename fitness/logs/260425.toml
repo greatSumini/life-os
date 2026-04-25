@@ -1,0 +1,50 @@
+date = "2026-04-25"
+session_type = "self"
+duration_min = 52
+notes = "추천 루틴 그대로 수행 — 가슴(메인) + 코어(취약점 보강) + 러닝(취약점 보강)."
+
+[[workouts]]
+exercise = "chest_fly"
+sets = 3
+weight_kg = 15
+reps_per_set = 20
+notes = "본 가슴운동 전 워밍업"
+
+[[workouts]]
+exercise = "chest_press"
+sets = 3
+weight_kg = 22.5
+reps_per_set = 20
+notes = "이전 20kg → +2.5kg / 내릴 때 어깨 찝히지 않게, 어깨 낮춘 채 뒤로 회전하는 느낌 유지"
+
+[[workouts]]
+exercise = "incline_bench_press"
+sets = 3
+weight_kg = 15
+reps_per_set = 12
+notes = "신규 / 가벼운 무게로 시작"
+
+[[workouts]]
+exercise = "side_plank_band"
+sets = 2
+reps_per_set = 20
+duration_sec = 10
+notes = "각 사이드 / 좌측 약함 → 좌측부터, 좌측 횟수 더 많이"
+
+[[workouts]]
+exercise = "cable_woodchop"
+sets = 2
+weight_kg = 10
+reps_per_set = 14
+notes = "좌:우 = 2:1 비율 (좌측 보강)"
+
+[[workouts]]
+exercise = "plank_bosu"
+sets = 3
+duration_sec = 60
+
+[[workouts]]
+exercise = "running"
+sets = 1
+duration_sec = 900
+notes = "15분 / 가벼운 페이스 / 근지구력 보강 (4-22 트레이너 권장)"
