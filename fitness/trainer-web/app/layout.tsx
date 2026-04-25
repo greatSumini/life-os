@@ -5,6 +5,11 @@ import TabBar from "@/components/TabBar";
 export const metadata: Metadata = {
   title: "운동 기록",
   description: "PT 운동 기록 대시보드",
+  appleWebApp: {
+    capable: true,
+    title: "운동 기록",
+    statusBarStyle: "default",
+  },
 };
 
 export const viewport: Viewport = {
