@@ -37,6 +37,18 @@ exercise = "plank_bosu"
 sets = 3
 duration_sec = 60
 
+[[workouts]]
+exercise = "barbell_curl"
+sets = 3
+reps_per_set = 20
+notes = "이지바 / 라잉 트라이셉스 익스텐션과 슈퍼세트"
+
+[[workouts]]
+exercise = "lying_tricep_extension"
+sets = 3
+reps_per_set = 20
+notes = "이지바 / 바벨컬과 슈퍼세트"
+
 [[skipped]]
 exercise = "cable_woodchop"
 sets = 2
