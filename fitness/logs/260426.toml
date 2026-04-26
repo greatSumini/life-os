@@ -1,0 +1,44 @@
+date = "2026-04-26"
+session_type = "self"
+notes = "추천 루틴 (계획) — 등(메인) + VMO 보강 + 코어 + 러닝. 수행 후 실제 무게/세트로 업데이트 필요."
+
+[[workouts]]
+exercise = "side_plank_band"
+sets = 2
+reps_per_set = 20
+duration_sec = 10
+notes = "활성화 / 각 사이드 / 좌측 약함 → 좌측부터, 좌측 횟수 더 많이"
+
+[[workouts]]
+exercise = "lat_pulldown"
+sets = 4
+weight_kg = 22.5
+reps_per_set = 15
+notes = "메인 등 / 이전 20kg → +2.5kg. 마지막 세트 무거우면 20kg 드롭"
+
+[[workouts]]
+exercise = "seated_row"
+sets = 3
+weight_kg = 25
+reps_per_set = 15
+notes = "무게 유지 / 자세 안정화 우선 (4-23 unstable). 폼 안정 후 다음 세션부터 +2.5kg"
+
+[[workouts]]
+exercise = "face_pull"
+sets = 3
+weight_kg = 15
+reps_per_set = 20
+notes = "후면삼각근(목표) / 무게 고정으로 자극 집중 (4-23 unstable)"
+
+[[workouts]]
+exercise = "single_leg_extension"
+sets = 4
+weight_kg = 10
+reps_per_set = 15
+notes = "VMO 보강 / 좌·우 각 2세트, 좌측부터 / 우측 슬개골 외측 과한 움직임 주의 — 컨트롤 우선"
+
+[[workouts]]
+exercise = "running"
+sets = 1
+duration_sec = 900
+notes = "15분 / 가벼운 페이스 / 4-22 트레이너 권장 (근지구력 보강), 4-23·4-25 연속 skip"
