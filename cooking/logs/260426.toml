@@ -5,3 +5,7 @@ ingredients = ["돼지목살 150g", "냉동 양파 60g", "냉동 마늘 8g (3쪽
 effort = 2
 satisfaction = 0
 romantic = 2
+
+[dinner]
+type = "ate_out"
+menu = "맥도날드 베이컨 토마토 디럭스 버거 + 코울슬로 + 맥너겟 4p (칠리 소스) + 제로콜라"
